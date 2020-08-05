@@ -11,4 +11,4 @@ or
 
 > yarn start
 
-views are on [ocalhost:3000](ocalhost:3000)
+views are on [localhost:3000](localhost:3000)
