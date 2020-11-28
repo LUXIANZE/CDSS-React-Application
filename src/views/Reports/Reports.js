@@ -3,8 +3,8 @@ import { makeStyles } from '@material-ui/styles';
 import { DecisionReports, DecisionToolbar } from './components';
 import gql from 'graphql-tag';
 import { Query } from '@apollo/react-components';
-import mockData from './data';
-import data from 'views/Dashboard/components/LatestOrders/data';
+// import mockData from './data';
+// import data from 'views/Dashboard/components/LatestOrders/data';
 
 export const PATIENT_QUERY = gql`
 {
@@ -32,10 +32,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Decision = () => {
+const Reports = () => {
   const classes = useStyles();
 
-  const [users] = useState(mockData);
+  // const [users] = useState(mockData);
   const [patient, setPatient] = useState([]);
 
   return (
@@ -65,4 +65,4 @@ const Decision = () => {
   );
 };
 
-export default Decision;
+export default Reports;
